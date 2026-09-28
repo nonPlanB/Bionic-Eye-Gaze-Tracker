@@ -1,0 +1,40 @@
+{
+    "model": {
+        "engine_path": "models/best.engine",
+        "cpu_fallback_path": "models/best.pt",
+        "device": "auto",
+        "image_size": 640,
+        "confidence": 0.40,
+        "iou": 0.4
+    },
+    "camera": {
+        "index": 0,
+        "width": 640,
+        "height": 480
+    },
+    "mapping": {
+        "file": "config/mapping.json",
+        "min_x": -35,
+        "max_x": 35,
+        "min_y": -18,
+        "max_y": 18
+    },
+    "filter": {
+        "ewma_weights": [
+            0.2,
+            0.3,
+            0.5
+        ],
+        "max_prediction_frames": 25,
+        "auto_center_when_lost": true
+    },
+    "ble": {
+        "device_name": "ESP32_EPD_EYE",
+        "service_uuid": "4fafc201-1fb5-459e-8fcc-c5c9c331914b",
+        "characteristic_uuid": "beb5483e-36e1-4688-b7f5-ea07361b26a8",
+        "scan_timeout": 5.0,
+        "reconnect_interval": 3.0,
+        "minimum_interval": 0.05,
+        "keepalive_interval": 0.35
+    }
+}

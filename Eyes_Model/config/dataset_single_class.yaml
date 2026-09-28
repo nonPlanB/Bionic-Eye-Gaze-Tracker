@@ -1,0 +1,9 @@
+# config/dataset_single_class.yaml
+path: E:/个人事务/06 Yunan/Eyes_Model/datasets/eye_dataset
+
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 1
+names: ['eye']

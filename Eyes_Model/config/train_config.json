@@ -1,0 +1,19 @@
+{
+    "dataset_yaml": "config/dataset_single_class.yaml",
+    "base_model": "yolov8s.pt",
+    "image_size": 640,
+    "epochs": 120,
+    "batch_size": 16,
+    "patience": 30,
+    "workers": 4,
+    "seed": 42,
+    "device": "auto",
+    "rect": true,
+    "close_mosaic": 10,
+    "export": {
+        "format": "engine",
+        "half": true,
+        "workspace_gb": 4,
+        "simplify_onnx": true
+    }
+}
